@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/uac/rshr/zmwu/.local/bin/fairseq-generate", line 8, in <module>
+    sys.exit(cli_main())
+  File "/uac/rshr/zmwu/.local/lib/python3.6/site-packages/fairseq_cli/generate.py", line 286, in cli_main
+    main(args)
+  File "/uac/rshr/zmwu/.local/lib/python3.6/site-packages/fairseq_cli/generate.py", line 36, in main
+    return _main(args, h)
+  File "/uac/rshr/zmwu/.local/lib/python3.6/site-packages/fairseq_cli/generate.py", line 159, in _main
+    hypos = task.inference_step(generator, models, sample, prefix_tokens=prefix_tokens, constraints=constraints)
+  File "/research/d3/zmwu/model/mbart_company_version/mbart/translation_multi_simple_epoch_nni.py", line 219, in inference_step
+    constraints=constraints,
+  File "/opt/conda/lib/python3.6/site-packages/torch/autograd/grad_mode.py", line 15, in decorate_context
+    return func(*args, **kwargs)
+  File "/uac/rshr/zmwu/.local/lib/python3.6/site-packages/fairseq/sequence_generator.py", line 166, in generate
+    return self._generate(sample, **kwargs)
+  File "/uac/rshr/zmwu/.local/lib/python3.6/site-packages/fairseq/sequence_generator.py", line 295, in _generate
+    lprobs[lprobs != lprobs] = torch.tensor(-math.inf).to(lprobs)
+RuntimeError: CUDA out of memory. Tried to allocate 2.38 GiB (GPU 0; 23.65 GiB total capacity; 15.75 GiB already allocated; 141.44 MiB free; 22.76 GiB reserved in total by PyTorch)
+sacreBLEU: That's 100 lines that end in a tokenized period ('.')
+sacreBLEU: It looks like you forgot to detokenize your test data, which may hurt your score.
+sacreBLEU: If you insist your data is detokenized, or don't care, you can suppress this message with '--force'.

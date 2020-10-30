@@ -1,0 +1,9 @@
+[10/30/2020, 04:56:02 AM] INFO (root/MainThread) No pervious trianing found.
+[10/30/2020, 04:56:02 AM] INFO (root/MainThread) train process start,process ID is 4302
+[10/30/2020, 12:16:43 PM] INFO (root/MainThread) train process finish, check if train process close properly...
+[10/30/2020, 12:16:43 PM] INFO (root/MainThread) train process finish and exit normally.
+[10/30/2020, 12:16:43 PM] INFO (root/MainThread) time spenting on training: 7.344764h
+[10/30/2020, 12:16:43 PM] INFO (root/MainThread) generate process start,process ID is 31083
+[10/30/2020, 11:55:45 PM] INFO (root/MainThread) generate process finish, check if generate process close properly...
+[10/30/2020, 11:55:45 PM] INFO (root/MainThread) generate process finish and exit normally.
+[10/31/2020, 12:09:01 AM] INFO (root/MainThread) bleu score: 2
